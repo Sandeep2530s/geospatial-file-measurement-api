@@ -438,7 +438,3 @@ pytest tests/ -v
 
 ---
 
-## 👨‍💻 Submission Details
-- **Assignment**: Geospatial File Measurement API (Option 1)
-- **Applicant**: SDE Intern Candidate
-- **Company**: AEREO (Bengaluru, India)
