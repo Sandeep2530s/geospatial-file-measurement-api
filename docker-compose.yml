@@ -1,0 +1,14 @@
+services:
+  geospatial-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: geospatial_measurement_api
+    ports:
+      - "8000:8000"
+    environment:
+      - GEO_DEBUG=false
+      - GEO_MAX_UPLOAD_SIZE_MB=50
+    volumes:
+      - ./temp_uploads:/app/temp_uploads
+    restart: unless-stopped

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bengaluru Mining &amp; Infrastructure Survey</name>
+    <description>Drone survey boundary and haul road mapping</description>
+    
+    <!-- Polygon 1: Open Pit Quarry Zone -->
+    <Placemark>
+      <name>Quarry Extraction Block A</name>
+      <description>Active iron ore / granite extraction pit</description>
+      <ExtendedData>
+        <Data name="operator"><value>AEREO Field Team</value></Data>
+        <Data name="material"><value>Granite</value></Data>
+        <Data name="survey_date"><value>2026-10-01</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5850,12.9650,0 
+              77.5950,12.9650,0 
+              77.5950,12.9750,0 
+              77.5850,12.9750,0 
+              77.5850,12.9650,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- Polygon 2: Processing Plant &amp; Stockpile Area -->
+    <Placemark>
+      <name>Stockpile &amp; Processing Yard</name>
+      <description>Crushed stone stockpile and screening plant</description>
+      <ExtendedData>
+        <Data name="capacity_tons"><value>50000</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5980,12.9680,0 
+              77.6050,12.9680,0 
+              77.6050,12.9740,0 
+              77.5980,12.9740,0 
+              77.5980,12.9680,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- LineString: Primary Haul Road -->
+    <Placemark>
+      <name>Primary Quarry Haul Road</name>
+      <description>Heavy dumper access route connecting Pit A to processing yard</description>
+      <ExtendedData>
+        <Data name="road_type"><value>Gravel/Unpaved</value></Data>
+        <Data name="width_meters"><value>12</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          77.5850,12.9650,0 
+          77.5900,12.9670,0 
+          77.5940,12.9710,0 
+          77.5980,12.9730,0 
+          77.6020,12.9740,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- Point: Base Station GCP -->
+    <Placemark>
+      <name>GCP Base Station Alpha</name>
+      <description>DGPS Ground Control Point for drone flight calibration</description>
+      <ExtendedData>
+        <Data name="accuracy"><value>0.015m</value></Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>77.5900,12.9700,920</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>
